@@ -1,4 +1,4 @@
-#!/bin/shell
+#!/bin/bash
 
 mv ./simple-be-api/docs ./simple-be-api/be-docs
 mv ./simple-fe-webapp/docs ./simple-fe-webapp/fe-docs 
