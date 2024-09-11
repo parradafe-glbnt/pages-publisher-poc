@@ -39,10 +39,12 @@ jobs:
         run: 'cd ./simple-be-api && npm i && cd ..'
       - name: Build documentation
         run: ./.github/scripts/generate-docs.sh
+      - name: Build Artifact
+        run: ./.github/scripts/generate-artifact.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./simple-be-api/docs ./simple-fe-webapp/docs
+          path: ./simple-be-api/wrapper
 
   # Deployment job
   deploy:
