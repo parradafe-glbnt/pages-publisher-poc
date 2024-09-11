@@ -4,11 +4,11 @@ for PACKAGE in $(ls)
 do
     echo "=>> $PACKAGE"
     cd $PACKAGE
-    if [ -e './node_modules' ]
+    if [ -ne './node_modules' ]
     then
         npm i
+        npm run docs
     fi
-    npm run docs
     cd ..
     echo "docs generated for : $PACKAGE"
 done
