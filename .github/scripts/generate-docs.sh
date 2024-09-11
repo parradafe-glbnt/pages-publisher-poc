@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd ../../
 for PACKAGE in $(ls)
 do
     echo "=>> $PACKAGE"
