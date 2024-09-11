@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         run: 'cd ./simple-be-api && npm i && cd ..'
       - name: Build documentation
-        run: cd ./simple-be-api && npm run docs && cd ..
+        run: ./.github/scripts/generate-docs.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
