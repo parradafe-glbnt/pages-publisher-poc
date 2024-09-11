@@ -35,8 +35,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Install dependencies
-        run: 'cd ./simple-be-api && npm i && cd ..'
       - name: Build documentation
         run: ./.github/scripts/generate-docs.sh
       - name: Build Artifact

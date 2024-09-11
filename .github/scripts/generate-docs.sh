@@ -6,8 +6,9 @@ do
     cd $PACKAGE
     if [ -e './node_modules' ]
     then
-        npm run docs
+        npm i
     fi
+    npm run docs
     cd ..
     echo "docs generated for : $PACKAGE"
 done
